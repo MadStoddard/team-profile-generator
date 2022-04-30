@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
+const generateHTML = require('./src/generateHTML')
 
 const employees = [];
 
@@ -89,11 +90,11 @@ const createIntern = () => {
         },
         {
             type: "input",
-            name: "internGitHub",
-            message: "What is the intern's GitHub?"
+            name: "internSchool",
+            message: "What is the intern's school?"
         }
-    ]).then((answer) => {
-        const newIntern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internGitHub);
+    ]).then((answers) => {
+        const newIntern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool);
 
         employees.push(newIntern);
 
@@ -139,28 +140,7 @@ const buildTeam = () => {
 
 }
 
-const generateHTML = (employees) => {
-    return `
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    ${
-        employees.map((employee) => {
-            return `
-                <h1>${employee.name}</h1>
-            `
-        })
-    }
-</body>
-</html>
-`
-}
+
 
 
 createManager()
