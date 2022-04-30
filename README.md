@@ -19,9 +19,10 @@ For a video walk through of how it is created, view here: (https://watch.screenc
 
 ## Usage
 
-Use this website as a guide to gather more information the weather in different cities. This could be used to plan activities or when packing for a trip.
+Use this website as a tool to help organize data about employees in a specific department.
 
-![Weather Website](https://user-images.githubusercontent.com/98136587/161442265-e64616eb-07ce-437f-994a-5eb640503ac2.png)
+![team-profile-generator screenshot](https://user-images.githubusercontent.com/98136587/166120592-609fd6ac-e30b-4fbe-a25b-6557ba16d7cc.png)
+
 
 
 ## Credits
