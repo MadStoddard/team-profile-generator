@@ -15,7 +15,8 @@ The backend application allows a user to input data, that renders a website full
 
 This website is created on the backend, using JavaScript, Node, Inquirer, and Jest.
 
-For a video walk through of how it is created, view here: (https://watch.screencastify.com/v/msNtyzad7UtkWW2WmxY8)
+For a video walk through of how the HTML file is created, view here: (https://watch.screencastify.com/v/msNtyzad7UtkWW2WmxY8)
+For a video of my tests being activated and passed, view here: (https://watch.screencastify.com/v/1N34cR8BQYqv8dy5YjPr)
 
 ## Usage
 
